@@ -1,0 +1,48 @@
+/* Custom Styles */
+
+body {
+    scroll-behavior: smooth;
+    background: black;
+}
+
+#home {
+    background: url('profile.jpg') no-repeat center center/cover;
+    color:rgb(205, 70, 52);
+}
+#home p{
+    font-weight: bold;
+}
+#home h1{
+    font-weight: bold;
+}
+
+
+#about
+{
+    color: white;
+}
+
+#about img {
+    border: 5px solid rgb(205, 70, 52);
+}
+
+#portfolio .card {
+    margin-bottom: 30px;
+}
+
+#contactForm {
+    margin-top: 30px;
+    
+
+}
+
+#contact
+{
+    color:white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
