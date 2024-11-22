@@ -1,20 +1,51 @@
-/* Custom Styles */
 
-body {
+body 
+{
     scroll-behavior: smooth;
     background: black;
 }
 
-#home {
-    background: url('profile.jpg') no-repeat center center/cover;
-    color:rgb(205, 70, 52);
+#home 
+{
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color:rgb(174, 205, 52);
 }
-#home p{
+#home p
+{
     font-weight: bold;
 }
-#home h1{
+#home h1
+{
     font-weight: bold;
 }
+
+#dynamic-text::after 
+{
+    content: "|";
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink 
+{
+    50% 
+    {
+        opacity: 0;
+    }
+}
+
+.nav-item
+{
+    font-weight:bold;
+}
+
+#about 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(174, 205, 52, 0.8));
+                
+    color: white;
+    padding: 60px 0; 
+}
+
 
 
 #about
@@ -22,27 +53,261 @@ body {
     color: white;
 }
 
-#about img {
+#about img 
+{
     border: 5px solid rgb(205, 70, 52);
 }
 
-#portfolio .card {
+.highlight 
+{
+    color: rgb(174, 205, 52); 
+    font-weight: bold; 
+}
+
+#portfolio
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(174, 205, 52, 0.8));
+     
+}
+
+.card 
+{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+}
+
+.card:hover 
+{
+    transform: scale(1.02);
+    box-shadow: -8px -8px 16px rgba(60, 151, 235, 10), 8px 8px 16px rgba(60, 151, 235, 100);
+}
+
+#portfolio .card 
+{
     margin-bottom: 30px;
 }
 
-#contactForm {
-    margin-top: 30px;
-    
+#work-experience 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(174, 205, 52, 0.8));
+    color: white;
+    padding: 60px 0;
+}
 
+#work-experience h2 
+{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#skills 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(174, 205, 52, 0.8));
+    color: white;
+    padding: 60px 0;
+}
+
+#skills h2 
+{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+#skills .skill-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+}
+
+
+#skills .skill-item 
+{
+    text-align: center;
+    flex: 1 1 calc(25% - 30px); 
+    min-width: 200px; 
+}
+
+#skills .skill-item i,
+#skills .skill-item img
+{
+    font-size: 3rem; 
+    max-width: 3rem; 
+    max-height: 3rem; 
+    display: block;
+    margin: 0 auto 10px auto; 
+    color: rgb(174, 205, 52);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#skills .skill-item img:hover
+{
+    transform: scale(1.2);
+}
+
+
+#skills .skill-item i 
+{
+    font-size: 3rem;
+    color: rgb(174, 205, 52);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#skills .skill-item i:hover 
+{
+    transform: scale(1.2);
+}
+
+#skills .skill-item p 
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 768px) 
+{
+    #skills .skill-item {
+        flex: 1 1 calc(50% - 30px); 
+    }
+}
+
+@media (max-width: 480px) 
+{
+    #skills .skill-item 
+    {
+        flex: 1 1 calc(100% - 30px);
+    }
+}
+
+
+#education 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(174, 205, 52, 0.8));
+    color: white;
+    padding: 60px 0;
+}
+
+#education h2 
+{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#education .degree 
+{
+    margin-bottom: 20px;
+}
+
+#education .degree h5 
+{
+    font-weight: bold;
+    color: rgb(174, 205, 52);
+}
+
+#education .degree p 
+{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#education .degree .dates 
+{
+    color:blue;
+    font-weight: bold;
+}
+
+#education .activities 
+{
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(174, 205, 52);
 }
 
 #contact
 {
-    color:white;
+    background:rgba(0, 0, 0, 0.8); ;
+}
+#contact h2
+{
+    color: white;
+}
+#contact .contact-info 
+{
+    text-align: center;
 }
 
-footer {
+#contact .contact-item i 
+{
+    color: blue(174, 205, 52); 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact .contact-item i:hover 
+{
+    transform: scale(1.2);
+    color: rgb(174, 205, 52);
+}
+
+#contact .contact-item p 
+{
+    font-size: 1rem;
+    color: white;
+    margin-top: 8px;
+}
+
+
+footer 
+{
     position: relative;
     bottom: 0;
     width: 100%;
+}
+#cv 
+{
+    color:white;
+}
+
+#cv-message 
+{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(174, 205, 52, 0.8));
+    color: white;
+}
+
+#cv-message .highlight 
+{
+    color: rgb(174, 205, 52);
+    font-weight: bold;
+}
+
+#cv-message a 
+{
+    color: rgb(60, 151, 235);
+    text-decoration: none;
+}
+
+#cv-message a:hover 
+{
+    color: rgb(174, 205, 52);
+}
+
+
+#cv-message .social-links i 
+{
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-right: 20px;
+}
+
+#cv-message .social-links i:hover 
+{
+    transform: scale(1.2);
+    color: rgb(174, 205, 52);
 }
