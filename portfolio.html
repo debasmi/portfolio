@@ -6,10 +6,12 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -19,10 +21,15 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 
@@ -30,21 +37,48 @@
     <section id="home" class="vh-100 d-flex align-items-center">
         <div class="container text-center">
             <h1 class="display-4">Welcome to My Portfolio</h1>
-            <p class="lead">I'm a passionate Web Developer</p>
+            <br>
+            <h2 class="lead" style="font-weight: bold;">I am Debasmi Basu</h2>
+            <br>
+            <h3> 
+                A <span id="dynamic-text" style="color: rgb(174, 205, 52);"></span>
+            </h3>
+            <br>
             <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <br>
+            <br>
+            <h5>Find Me on</h5>
+            <a href="https://github.com/debasmi" target="_blank" class="ms-3">
+                <div style="background-color: white;border-radius: 5px; padding: 5px; display: inline-block; ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;">
+                </div>
+            </a>
+            
+            
+            <a href="https://www.linkedin.com/in/debasmi-basu-513726288" target="_blank" class="me-3">
+                <div style="background-color: white; border-radius: 5px; padding: 5px ; margin-left: 6px; display: inline-block;">
+                    <img src="images/LinkedIn-Blue.png" alt="LinkedIn" style="width: 70px; height: 30px;">
+                </div>
+            </a>
+            
         </div>
+        
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <div class="row">
+            <div class="row text-center text-lg-start">
                 <div class="col-lg-6">
-                    <h2>About Me</h2>
-                    <p>I am a 2nd year student  extremely passionate about web development. I have currently completed front end web development and am now going to embark on being a full stack developer.</p>
+                    <h2 style="text-align: center;">LET ME <span class="highlight">INTRODUCE</span> MYSELF</h2>
+                    <p>I fell in love with technology programming and I have at least learnt something, I think… 🤷‍♂️</p>
+
+                    <p>I am fluent in classics like <span class="highlight">Python, HTML, CSS, JS.</span></p>
+                        
+                    <p>My field of interests are majorly focused on <span class="highlight">Front-End Web Design</span> and <span class="highlight">Back-end Development</span>. I am an ethusiastic developer who uses <span class="highlight">DJANGO framework</span> for most of her web development projects. </p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="me.jpg" class="img-fluid rounded" alt="Profile Picture">
+                <div class="col-lg-6 d-flex justify-content-end">
+                    <img src="images/girlcoding.png" class="img-fluid rounded" alt="Profile Picture"style="width: 100%; max-width: 300px; height: auto; margin: 0 auto;">
                 </div>
             </div>
         </div>
@@ -53,32 +87,57 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5 bg-dark">
         <div class="container">
-            <h2 class="text-center" style="color: white;">My Work</h2>
+            <h2 class="text-center" style="color: white;">MY RECENT <span class="highlight">WORKS</span></h2>
+            <p style=" color: white ;text-align: center;">Here are some of the projects I have recently worked on</p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project1.png" class="card-img-top" alt="Project 1">
+                        <img src="images/todolist-proj1.jpeg" class="card-img-top" alt="Project 1";>
                         <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">A brief description of the project.</p>
+                            <h5 class="card-title text-center"><span class="highlight" >To-Do List</span></h5>
+                            <p class="card-text" style="text-align: justify";>Developed a to-do list site which enables the user to make schedule for the day along with time and task and write their individual top priorities. It also allows them to set challenges for themselves and write down their mood for the day. It helps them in organizing tasks that are to be done soon and the day after offering users to set the theme according to their preference.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://github.com/debasmi/to-do-list" target="_blank" class="me-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;">
+                                </a>
+                                <a href="https://debasmi.github.io/to-do-list/todo.html" target="_blank">
+                                    <img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Website" style="width: 30px; height: 30px;">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project2.png" class="card-img-top" alt="Project 2">
+                        <img src="images/pma-proj2.jpeg" class="card-img-top" alt="Project 2" ;>
                         <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">A brief description of the project.</p>
+                            <h5 class="card-title text-center"><span class="highlight">Project Management App</span></h5>
+                            <p class="card-text "style="text-align: justify";>A back-end based project using Django framework developed for an efficient project management app designed for team collaboration, task tracking, and milestone management. Features include user authentication, role-based access, and a responsive dashboard for efficient tracking of projects and tasks. One will be able to keep a track of the project list and assign tasks under the project in order to ensure which are the task that are new, completed, in progress, rejected, fixed and has been passed. It also ensures users are able to view the details regarding their respective projects.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://github.com/debasmi/project_management_app" target="_blank" class="me-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;">
+                                </a>
+                                <a href="https://github.com/debasmi/project_management_app/blob/main/README.md" target="_blank">
+                                    <img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Website" style="width: 30px; height: 30px;">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project3.png" class="card-img-top" alt="Project 3">
+                        <img src="images/restopic-proj3.png" class="card-img-top" alt="Project 3";>
                         <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">A brief description of the project.</p>
+                            <h5 class="card-title text-center"><span class="highlight">BackEnd for Restaurant</span></h5>
+                            <p class="card-text text-align:justify";>Developed a backend system for a restaurant named littlelemon containing Menu and BookingAPI connected to MySql database. Menu api helps to view, add and delete different items and booking helps to register the no of guests with and time and date they would be visiting the restaurant.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://github.com/debasmi/fullstack" target="_blank" class="me-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;">
+                                </a>
+                                <a href="https://github.com/debasmi/fullstack/blob/main/README.md" target="_blank">
+                                    <img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Website" style="width: 30px; height: 30px;">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,31 +145,190 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <form id="contactForm" class="mx-auto" style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+    <!-- Work Experience Section -->
+<section id="work-experience" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Work Experience</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Web Development Intern</h4>
+                <p><strong>Vice Chancellor Internship Scheme(VCIS):Part-Time 2024-2025</strong></p>
+                <p><strong>Department Name:</strong> Culture Council, University of Delhi</p>
+                <p><strong>Duration:</strong> November 2024 - Present</p>
+                <p><strong>Key Responsibilities:</strong></p>
+                <ul>
+                    <li>Majorly focusing on updating front-end features for making the website of the department user responsive.</li>
+                    <li>Working on updating information regarding all the works including events and workshops and admissions carried out by the department throughout the year and on special evnts like G20 and NAAC visit and others.</li>
+                    <li>Gaining exposure on developing website using Wordpress.</li>
+                    <li>Contributing to bug fixes and code reviews, ensuring code quality and performance.</li>
+                    <li>Collaborating with team for ensuring that correct data is uploaded on website.</li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2>SKILLS</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fas fa-code"></i>
+                <p>Front End Web Development</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fas fa-server"></i>
+                <p>Back-End Development</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-python"></i>
+                <p>Django Framework</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-js-square"></i>
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fas fa-code"></i>
+                <p>C</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fas fa-cogs"></i>
+                <p>Prompt Engineering</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fas fa-database"></i>
+                <p>SQL (with Python Integration)</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fab fa-github"></i>
+                <p>Git/Github</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <img src="images/replitlogo.png"></img>
+                <p>Replit</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <p>Problem Solving</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 skill-item">
+                <img src="images/insomnia-logo.png"></img>
+                <p>Insomnia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2>EDUCATION</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="degree">
+                    <h5>B. Tech. - Information Technology and Mathematical Innovations - CGPA: 8.68</h5>
+                    <p class="dates">Aug 2023 - present</p>
+                    <p>Cluster Innovation Centre, University of Delhi, Delhi, India</p>
+                </div>
+                <div class="activities">
+                    <p>Activities and Societies: Co-Head of Dance Club-TARANG, Robotics Club-AUTONOMI, Event Organization, Anchoring</p>
+                </div>
+                <br>
+                <div class="degree">
+                    <h5>AISSCE (Class XII Boards) - 94%</h5>
+                    <p class="dates">Jun 2021 - Apr 2023</p>
+                    <p>Delhi Public School, Ruby Park, Kolkata, West Bengal, India</p>
+                    <p>97% in CS (Python and SQL)</p>
+                </div>
+                <br>
+                <div class="degree">
+                    <h5>AISSE (Class X Boards) - 98%</h5>
+                    <p class="dates">Apr 2021</p>
+                    <p>G.D Birla Centre for Education, Kolkata, West Bengal, India</p>
+                </div>
+                <div class="activities">
+                    <p>Activities and Societies: Dance Club, Prefect for 3 years, Anchoring</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CV Section -->
+<section id="cv" class="py-5">
+    <div class="container text-center">
+        <h2 >Check My <span class="highlight">CV</span></h2>
+        <p class="mt-3">Click the button below to learn more.</p>
+        <a href="cv.html" class="btn btn-primary mt-3">View My CV</a>
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">FEEL FREE TO <span class="highlight">CONNECT</span> WITH ME</h2>
+        <div class="contact-info d-flex flex-wrap justify-content-center align-items-center mt-4">
+            <!-- Phone -->
+            <div class="contact-item mx-3 text-center">
+                <a href="tel:+917439640610" target="_blank">
+                    <i class="fas fa-phone fa-3x"></i>
+                </a>
+                <p class="mt-2">+91 7439640610</p>
+            </div>
+            <!-- Email -->
+            <div class="contact-item mx-3 text-center">
+                <a href="mailto:basudebasmi2006@gmail.com" target="_blank">
+                    <i class="fas fa-envelope fa-3x"></i>
+                </a>
+                <p class="mt-2">basudebasmi2006@gmail.com</p>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item mx-3 text-center">
+                <a href="https://www.linkedin.com/in/debasmi-basu-513726288" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <p class="mt-2">LinkedIn</p>
+            </div>
+            <!-- GitHub -->
+            <div class="contact-item mx-3 text-center">
+                <a href="https://github.com/debasmi" target="_blank">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+                <p class="mt-2">GitHub</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
+            <p >Made by Debasmi Basu</p>
             <p>&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
