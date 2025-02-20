@@ -7,7 +7,7 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
     });
 });
 
-const texts = ["passionate web developer", "fast learner"];
+const texts = ["passionate web developer", "fast learner", "design enthusiast"];
 let currentTextIndex = 0;
 let currentCharIndex = 0;
 
