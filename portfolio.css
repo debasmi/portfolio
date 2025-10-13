@@ -468,8 +468,8 @@ footer
 
 #cv-message 
 {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9));
-    color: white;
+    background: white;
+    color: black;
 }
 
 #cv-message .highlight 
@@ -501,4 +501,5 @@ footer
     transform: scale(1.2);
     color: rgb(60, 151, 235);
 }
+
 
