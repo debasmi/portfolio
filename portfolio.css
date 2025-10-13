@@ -466,11 +466,8 @@ footer
     color:white;
 }
 
-#cv-message 
-{
-    background: white;
-    color: black;
-}
+
+
 
 #cv-message .highlight 
 {
@@ -501,5 +498,6 @@ footer
     transform: scale(1.2);
     color: rgb(60, 151, 235);
 }
+
 
 
